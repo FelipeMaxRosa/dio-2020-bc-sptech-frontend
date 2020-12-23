@@ -1,0 +1,29 @@
+#RESUME
+1. O que é arquitetura em mensageria?
+  Client (web, mobile) -> HTTP/Proxy (hosteia) ->  
+  Servico 1/2/3, onde qualquer operação realizada por 
+  estes serviços, será gerada uma mensagem.
+  Obs.: Existem serviços que se comunicam externamente,
+  porém, outros nãom apenas consumindo mensagens de 
+  outros serviços.
+  Como por exemplo, cadastro de usuários. 
+
+  PRÓS
+  ====================================================
+  * Desacoplamento, pois a comunicação acaba sendo feita
+    através de um MESSAGE BROKER, que tem uma comunicação
+    assíncrona.
+  * Fácil Plug & Play
+  * Cominucação assíncrona
+  * Símples escalabilidade
+  * Broadcasting
+  * Permite Event Source
+  
+  CONTRA
+  ====================================================
+  * Single point of failure
+  * Difícil monitoramento
+
+
+2. Comunicação assíncrona entre serviços
+3. Gerenciamento de Erros
